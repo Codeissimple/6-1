@@ -1,17 +1,22 @@
 #include <iostream>
 using namespace std;
 
-void displayValue(int, int, int);
+void changeMe(int);
 
 int main() {
   
-  int valu1, value2, value3;
-  cout << "enter\n";
-  cin >> valu1 >> value2 >> value3;
-  displayValue(valu1, value2, value3);
+  int number =12;
+
+  cout << "Number is " << number << endl;
+
+  changeMe(number);
+  
+  cout << "Number is " << number << endl;
+
   return 0;
 } 
 
-void displayValue(int num, int num2, int num3){
-  cout << "The sum of three integers is " << (num + num2 + num3) << endl;
+void changeMe(int myValue){
+  myValue = 0;
+  cout << "Now number is " << myValue << endl;
 }
