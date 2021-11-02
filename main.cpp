@@ -2,18 +2,26 @@
 using namespace std;
 
 //Function header void displayMessage()
-void displayMessage(){
-  cout << "Hello from the function displayMessage.\n";
+void first(){
+  cout << "I'm now inside the function first\n";
 }
 //Above constitutes function definition
 
+void second(){
+  cout << "I'm now inside the function second\n";
+}
+
+void third(){
+  cout << "I'm now inside the function third\n";
+}
+
 int main() {
   
-  cout << "Hello from main.\n";
-  for (int count =0; count < 5; count++){
-      displayMessage();
-      cout << count << "\n";//Function call
-  }
-  cout << "Back in function main again.\n";
+  cout << "I'm starting in function main\n";
+  first();
+  second();
+  third();
+  cout << "Back in function main again". \n;
+  
   return 0;
 } 
