@@ -10,7 +10,10 @@ void displayMessage(){
 int main() {
   
   cout << "Hello from main.\n";
-  displayMessage();//Function call
+  for (int count =0; count < 5; count++){
+      displayMessage();
+      cout << count << "\n";//Function call
+  }
   cout << "Back in function main again.\n";
   return 0;
 } 
