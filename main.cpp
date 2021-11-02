@@ -1,18 +1,17 @@
 #include <iostream>
 using namespace std;
 
-void displayValue(int);
+void displayValue(int, int, int);
 
 int main() {
-  displayValue(5);
-  displayValue(15);
-  displayValue(56);
-  displayValue(45);
-  displayValue(995);
   
+  int valu1, value2, value3;
+  cout << "enter\n";
+  cin >> valu1 >> value2 >> value3;
+  displayValue(valu1, value2, value3);
   return 0;
 } 
 
-void displayValue(int num){
-  cout << "The value is " << num << "\n";
+void displayValue(int num, int num2, int num3){
+  cout << "The sum of three integers is " << (num + num2 + num3) << endl;
 }
