@@ -27,4 +27,4 @@ void divide(double arg1, double arg2)
   else{
     cout << (arg1 / arg2);
   }
-}
+}//comment
